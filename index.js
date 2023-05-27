@@ -50,12 +50,13 @@ function select_villain(cost) {
 
 let villains;
 let jumps;
-let cost = 8;
+let active = false;
 
-function main() {
+function reset() {
   let output = document.getElementById("output");
   villains = getVillains();
   cost = 8;
+  active = true;
   output.innerHTML = "";
 
   let max_count = randomChoice(COUNT);
@@ -75,14 +76,17 @@ function main() {
 
 function nextVillain() {
   let output = document.getElementById("output");
+  if (!active) {
+    reset();
+    return;
+  }
   if (jumps.length > 0) {
     output.innerHTML += `Next: ${cost} - ${select_villain(cost)}<br>`;
     cost += jumps.shift();
   } else {
     output.innerHTML += `Next: ${cost} - ${select_villain(cost)}`;
-    cost = 8; // reset cost
+    active = false;
   }
 }
 
-document.getElementById("startButton").addEventListener("click", main);
-document.getElementById("nextButton").addEventListener("click", nextVillain);
+document.getElementById("button").addEventListener("click", nextVillain);
