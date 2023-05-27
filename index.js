@@ -41,7 +41,7 @@ function getVillains() {
       },
       {
         name: "Jesse Quick",
-        url: "ttps://www.dcdeckbuilding.com/scans/Jesse%20Quick%209.jpg",
+        url: "https://www.dcdeckbuilding.com/scans/Jesse%20Quick%209.jpg",
       },
     ],
     10: [
