@@ -170,7 +170,7 @@ function select_villain(cost) {
   let selected = randomChoice(villains[cost]);
   villains[cost] = villains[cost].filter((villain) => villain !== selected);
 
-  let element = `<div><img src=${selected.url}><br><h3>${selected.name} (${cost})</h3></div>`;
+  let element = `<div><h3>${selected.name} (${cost})</h3><br><img src=${selected.url}></div>`;
   return element;
 }
 

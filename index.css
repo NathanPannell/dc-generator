@@ -10,20 +10,33 @@ h1 {
   color: #9ff;
 }
 
+button {
+  position: fixed; /* This will keep the button in place even when you scroll. */
+  bottom: 0; /* This locks the button to the bottom of the screen. */
+  width: 100%; /* This makes the button full width. */
+  height: 25vh; /* This makes the button height 25% of the viewport height. */
+  opacity: 50%;
+}
+
 #output {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
   margin: 20px;
   padding: 10px;
   border: 1px solid #ccc;
   background-color: #222;
   color: #ccc;
+  gap: 0;
 }
 
-button {
-  display: block;
-  margin: 20px;
-  padding: 20px;
-  font-size: 20px;
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
+img {
+  max-width: 100%;
+  max-height: 7-vh;
+  padding-bottom: 25vh;
+}
+
+h3 {
+  margin: 0;
+  text-align: center;
 }
