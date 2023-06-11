@@ -3,7 +3,7 @@ function getVillains() {
     8: [
       {
         name: "The Flash",
-        url: "https://www.dcdeckbuilding.com/scans/The%20Flash%208%20SO.jpg",
+        url: "https://www.dcdeckbuilding.com/scans/The%20Flash%208.jpg",
       },
       {
         name: "Ra's Al Ghul",
@@ -21,11 +21,11 @@ function getVillains() {
     9: [
       {
         name: "Deathstroke",
-        url: "https://www.dcdeckbuilding.com/scans/deathstrokeSvErrata.jpg",
+        url: "https://www.dcdeckbuilding.com/scans/Deathstroke%209.jpg",
       },
       {
         name: "Mordru The Merciless",
-        url: "https://www.dcdeckbuilding.com/scans/mordruTheMercilessSvErrata.jpg",
+        url: "https://www.dcdeckbuilding.com/scans/Mordru%20The%20Merciless%209.jpg",
       },
       {
         name: "Graves",
@@ -60,11 +60,11 @@ function getVillains() {
       { name: "(Injustice) Lex Luthor", url: "" },
       {
         name: "Helspont",
-        url: "https://www.dcdeckbuilding.com/scans/helspontSvErrata.jpg",
+        url: "https://www.dcdeckbuilding.com/scans/Helspont%2010.jpg",
       },
       {
         name: "Johnny Quick",
-        url: "https://www.dcdeckbuilding.com/scans/johnnyQuickSvErrata.jpg",
+        url: "https://www.dcdeckbuilding.com/scans/Johnny%20Quick%2010.jpg",
       },
       {
         name: "Constantine",
@@ -90,7 +90,7 @@ function getVillains() {
       },
       {
         name: "Helspont",
-        url: "https://www.dcdeckbuilding.com/scans/helspontImSvErrata.jpg",
+        url: "https://www.dcdeckbuilding.com/scans/Helspont%2011.jpg",
       },
       {
         name: "Mongul",
@@ -142,7 +142,7 @@ function getVillains() {
       },
       {
         name: "Gentleman Ghost",
-        url: "https://www.dcdeckbuilding.com/scans/gentlemanGhostSvErrata.jpg",
+        url: "https://www.dcdeckbuilding.com/scans/Gentleman%20Ghost%2013.jpg",
       },
     ],
     14: [
@@ -152,7 +152,7 @@ function getVillains() {
       },
       {
         name: "Isabel Rochev",
-        url: "https://www.dcdeckbuilding.com/scans/isabelRochevSvErrata.jpg",
+        url: "https://www.dcdeckbuilding.com/scans/Isabel%20Rochev%2014.jpg",
       },
     ],
   };
@@ -162,7 +162,7 @@ function randomChoice(choices) {
   return choices[Math.floor(Math.random() * choices.length)];
 }
 
-const COUNT = [5, 5, 5, 6];
+const COUNT = [4, 4, 4, 5];
 const END_14 = [true, true, true, false];
 const MAX_POINTS = 3;
 
@@ -216,3 +216,4 @@ function nextVillain() {
 }
 
 document.getElementById("button").addEventListener("click", nextVillain);
+document.addEventListener("load", reset());
