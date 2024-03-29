@@ -57,7 +57,7 @@ function getVillains() {
         name: "Cheshire",
         url: "https://www.dcdeckbuilding.com/scans/Cheshire%2010.jpg",
       },
-      { name: "(Injustice) Lex Luthor", url: "" },
+      { name: "(Injustice) Lex Luthor", url: "ill.jpg" },
       {
         name: "Helspont",
         url: "https://www.dcdeckbuilding.com/scans/Helspont%2010.jpg",
