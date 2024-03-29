@@ -62,10 +62,10 @@ function getVillains() {
         name: "Helspont",
         url: "https://www.dcdeckbuilding.com/scans/Helspont%2010.jpg",
       },
-      {
-        name: "Johnny Quick",
-        url: "https://www.dcdeckbuilding.com/scans/Johnny%20Quick%2010.jpg",
-      },
+      // {
+      //   name: "Johnny Quick",
+      //   url: "https://www.dcdeckbuilding.com/scans/Johnny%20Quick%2010.jpg",
+      // },
       {
         name: "Constantine",
         url: "https://www.dcdeckbuilding.com/scans/Constantine%2010.jpg",
